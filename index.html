@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>❤️‍🩹 Feices 15 primaveras mi amod ❤️‍🩹</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="titulo">❤️‍🩹 Feiz pupeaños mi amochitooo ❤️‍🩹</h1>
+    <div id="mensaje"></div>
+    <img src="img/foto.jpg" alt="Tu foto aquí" class="foto">
+    <audio controls autoplay loop>
+      <source src="music/perfect.mp3" type="audio/mpeg">
+      Tu navegador no soporta el audio 😢
+    </audio>
+    <p class="final">Te amo pomo ño tenesh una idea mi amochito❤️‍🩹</p>
+  </div>
+  <script>
+    const mensaje = `Dede e ía e pe llegate a mi vida toyo pambio mi amod, os ias shon mucho mash billates, as noches más taquias, y pada mometo pontigo she shente pomo u capituo pefeto e uña hitodia pe piedo vivid po shempe, ño she pomo epesad toyo o pe shinificas pada mi mi amod, peo e pada latido e mi poachon, hay u peacito e ti mi panchetoña pechosa mi amod. Feliz cumpleaños, gracias por existir y por ser la mejor parte de mis días. ❤️‍🩹`;
+    let i = 0;
+    function escribirTexto() {
+      if (i < mensaje.length) {
+        document.getElementById("mensaje").innerHTML += mensaje.charAt(i);
+        i++;
+        setTimeout(escribirTexto, 50);
+      }
+    }
+    escribirTexto();
+  </script>
+</body>
+</html>
